@@ -17,3 +17,22 @@
     margin-top: 35px;
     margin-bottom: 35px;
 }
+
+.customList ol{
+  padding: 0;
+  list-style-type: none;
+  counter-reset: listItem;
+}
+
+.customList .listItem::before{
+  counter-increment: listItem;
+  content: "0" counter(listItem) ".";
+  font-size: 70px;
+  margin-top: 75px;
+}
+
+.customlink{
+  color: #FF0000;
+  margin-top: 35px;
+}
+
