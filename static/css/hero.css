@@ -1,5 +1,13 @@
 .hero {
     padding-top: 130px;
     padding-bottom: 120px;
+}
+
+.tipo1{
     background-color: #CEFBFF;
+}
+
+.tipo2 {
+    background-color: #ECCEFF;
+    margin-top: 170px;
 }

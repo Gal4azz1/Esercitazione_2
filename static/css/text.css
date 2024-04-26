@@ -9,16 +9,32 @@
   font-size: 35px;
   padding: 14px 33px;
   line-height: 50px;
+  position: relative;
 }
 
+.button::after{
+  content: "";
+  background-image: url("../img/right-arrow-svgrepo-com\ 1.svg");
+  color: white;
+  width: 28px;
+  display: block;
+  height: 34px;
+  background-size: 28px 34px;
+  position: absolute;
+  right: 22px;
+  top: 50%;
+  transform: translateY(-50%)
+}
 
 .sottotitolo{
-    font-size: 35px;
-    margin-top: 35px;
-    margin-bottom: 35px;
+  font-size: 35px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  color: #707070;
 }
 
 .customList ol{
+  color: #707070;
   padding: 0;
   list-style-type: none;
   counter-reset: listItem;
@@ -28,11 +44,26 @@
   counter-increment: listItem;
   content: "0" counter(listItem) ".";
   font-size: 70px;
-  margin-top: 75px;
+  margin-top: 104px;
+  border-bottom: #707070 1px solid;
+  display: block;
 }
 
 .customlink{
   color: #FF0000;
   margin-top: 35px;
+}
+
+.listitemContent{
+  margin-top: 15px;
+  font-size: 22px;
+  
+}
+
+.final{
+  color: #707070;
+  margin-top: 80px;
+  margin-bottom: 200px;
+  font-size: 22px;
 }
 
